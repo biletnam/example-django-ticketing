@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Im list</h2>
+
+{% for obj in object_list %}
+    {{ obj }} | {{ obj.created_by }} | {{ obj.get_description }}<br>
+{% endfor %}
+
+</body>
+</html>
