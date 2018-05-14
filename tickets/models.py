@@ -21,4 +21,4 @@ class Ticket(TimeStampedModel):
         return d
 
     def __str__(self):
-        return 'Ticket #{id} - {title}'.format(id=self.id, title=self.title)
+        return 'Ticket #{id}'.format(id=self.id, title=self.title)
