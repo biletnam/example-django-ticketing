@@ -15,6 +15,9 @@ class Ticket(TimeStampedModel):
     urgency = models.CharField(choices=Urgency.choices(), default=Urgency.LOW, max_length=20)
 
     def get_description(self):
+        """
+        If urgency high, print 3 exclamation marks instead of one.
+        """
         d = self.description
         if self.urgency == Urgency.HIGH:
             d = d.replace('!', '!!!')
