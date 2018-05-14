@@ -116,3 +116,5 @@ results
 .config
 .DS_STORE
 .smother
+db.sqlite3
+
